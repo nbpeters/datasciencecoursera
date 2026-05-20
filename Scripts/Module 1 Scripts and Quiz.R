@@ -12,7 +12,7 @@ quiz_data[152:153,]
 quiz_data[47,1]
 
 #question 16 how many missing values are in the Ozone column
-sum(is.na(quiz_data[1,]))
+sum(is.na(quiz_data[,1]))
 
 #question 17 what is the mean of the Ozone column excluding missing values
 meanarg <- quiz_data[,1]
