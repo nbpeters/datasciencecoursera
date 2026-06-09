@@ -1,5 +1,5 @@
-#-----------------Coursera Module 2 Assignment----------------
-# Function 1 ----- pollutantmean -----------------------------
+#-----------------Coursera Module 2 Assignment --------------------------------
+# Function 1 ----- pollutantmean ----------------------------------------------
 pollutantmean <- function(dataDirectory, pollutant, id = 1:332){
   #creating an empty numeric vector for pollutant data entries to fill for later
   #mean calculation
@@ -24,12 +24,10 @@ pollutantmean <- function(dataDirectory, pollutant, id = 1:332){
     #before mean function
     looptable <- read.csv(tablepath)
     
-    #summing non-NA values into a total tableSum object/vector
+    #summing all values into a total tableVec object/vector, NAs removed later
     tableVec <- c(tableVec, looptable[[pollutant]]) 
   }
   mean(tableVec, na.rm = TRUE)
   #could set return here for good practice but since mean is final expression
   #this alone should suffice
 }
-
-    
